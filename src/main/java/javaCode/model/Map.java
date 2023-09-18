@@ -11,7 +11,6 @@ import java.util.Random;
 
 public class Map {
     private List<Platform> platforms;
-    private List<Enemy> enemies;
     private List<MapListener> listeners;
     private MyThread thread;
     private double dy = 0;
@@ -25,7 +24,7 @@ public class Map {
         putin = new Putin(210, (int)height);
         thread = new MyThread(this);
         platforms = new ArrayList<>();
-        enemies = new ArrayList<>();
+//        enemies = new ArrayList<>();
         listeners = new ArrayList<>();
         createPlatforms();
     }
