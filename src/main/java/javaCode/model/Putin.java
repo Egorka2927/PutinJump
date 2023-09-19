@@ -21,10 +21,6 @@ public class Putin {
         return x;
     }
 
-//    ===========================================
-//    PUTIN SHOULD HAVE AN ABILITY!!!!!!!!!!!!!!!
-//    ===========================================
-
     public double getY() {
         return y;
     }

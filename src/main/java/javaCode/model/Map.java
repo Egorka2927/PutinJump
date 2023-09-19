@@ -24,7 +24,6 @@ public class Map {
         putin = new Putin(210, (int)height);
         thread = new MyThread(this);
         platforms = new ArrayList<>();
-//        enemies = new ArrayList<>();
         listeners = new ArrayList<>();
         createPlatforms();
     }
@@ -49,13 +48,11 @@ public class Map {
         dy += 0.2;
         putin.setY(y + dy);
         if (putin.getY() > 600) {
-            //dy = -10;
             putin.setAlive(false);
             putin.setX(210);
             putin.setY((int)height);
             scoreCount = 0;
             prevScore = 0;
-//            thread.stop();
         }
         movePlatforms();
         checkCollision();

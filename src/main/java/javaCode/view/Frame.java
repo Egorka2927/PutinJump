@@ -4,7 +4,6 @@ import javaCode.controller.PutinMovementListener;
 import javaCode.controller.RestartGameListener;
 import javaCode.controller.StartGameListener;
 import javaCode.model.Map;
-import javaCode.model.MyThread;
 
 import javax.swing.*;
 import java.awt.*;
@@ -18,11 +17,9 @@ public class Frame extends JFrame {
     private GameLostPanel gameLostPanel;
     private JLabel score;
     private JLabel scoreCount;
-//    private MyThread thread;
 
     public Frame() {
         map = new Map();
-//        thread = new MyThread(map);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         setTitle("Putin Jump");
         setPreferredSize(new Dimension(914, 637));
@@ -103,7 +100,4 @@ public class Frame extends JFrame {
     public GameLostPanel getGameLostPanel() {
         return gameLostPanel;
     }
-    //    public MyThread getThread() {
-//        return thread;
-//    }
 }

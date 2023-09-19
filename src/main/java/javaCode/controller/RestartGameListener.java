@@ -20,7 +20,6 @@ public class RestartGameListener implements ActionListener {
         map.getPutin().setAlive(true);
         frame.getGameLostPanel().setVisible(false);
         frame.getMainPanel().setVisible(true);
-        //map.getThread().start();
         map.setThread(new MyThread(map));
         for (int i = 9; i >= 0; i--) {
             map.getPlatforms().remove(i);
