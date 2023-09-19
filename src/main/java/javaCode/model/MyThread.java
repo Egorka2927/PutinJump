@@ -6,8 +6,6 @@ public class MyThread extends Thread{
         this.map = map;
     }
 
-
-
     @Override
     public void run() {
         long lastTime = System.nanoTime();
