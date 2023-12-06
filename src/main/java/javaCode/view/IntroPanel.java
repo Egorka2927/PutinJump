@@ -88,7 +88,7 @@ public class IntroPanel extends JPanel {
         super.paintComponent(g);
         BufferedImage image = null;
         try {
-            File file = new File("C:\\Users\\fea00\\IdeaProjects\\summer2023\\putinJump\\src\\main\\resources\\russianFlag2.png");
+            File file = new File(getClass().getResource("/russianFlag2.png").getPath());
             image = new BufferedImage(900, 600, BufferedImage.TYPE_INT_RGB);
             image = ImageIO.read(file);
         } catch (Exception e) {

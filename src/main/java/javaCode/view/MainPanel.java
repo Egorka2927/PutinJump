@@ -45,15 +45,15 @@ public class MainPanel extends JPanel implements MapListener {
         File file = null;
         int ranNum = new Random().nextInt(5);
         if (ranNum == 0) {
-            file = new File("C:\\Users\\fea00\\IdeaProjects\\summer2023\\putinJump\\src\\main\\resources\\spasti-ego-uje-nevozmojno.wav");
+            file = new File(getClass().getResource("/spasti-ego-uje-nevozmojno.wav").getPath());
         } else if (ranNum == 1) {
-            file = new File("C:\\Users\\fea00\\IdeaProjects\\summer2023\\putinJump\\src\\main\\resources\\potomu-chto-potomu.wav");
+            file = new File(getClass().getResource("/potomu-chto-potomu.wav").getPath());
         } else if (ranNum == 2) {
-            file = new File("C:\\Users\\fea00\\IdeaProjects\\summer2023\\putinJump\\src\\main\\resources\\ya-nikogda-ne-narushal-konstitutsii-svoey-stranyi.wav");
+            file = new File(getClass().getResource("/ya-nikogda-ne-narushal-konstitutsii-svoey-stranyi.wav").getPath());
         } else if (ranNum == 3) {
-            file = new File("C:\\Users\\fea00\\IdeaProjects\\summer2023\\putinJump\\src\\main\\resources\\leningradskaja-ulica.wav");
+            file = new File(getClass().getResource("/leningradskaja-ulica.wav").getPath());
         } else if (ranNum == 4) {
-            file = new File("C:\\Users\\fea00\\IdeaProjects\\summer2023\\putinJump\\src\\main\\resources\\smeh-putina.wav");
+            file = new File(getClass().getResource("/smeh-putina.wav").getPath());
         }
         return file;
     }
@@ -114,7 +114,7 @@ public class MainPanel extends JPanel implements MapListener {
         super.paintComponent(g);
         BufferedImage image = null;
         try {
-            File file = new File("C:\\Users\\fea00\\IdeaProjects\\summer2023\\putinJump\\src\\main\\resources\\backgroundFinal3.png");
+            File file = new File(getClass().getResource("/backgroundFinal3.png").getPath());
             image = new BufferedImage(500, 600, BufferedImage.TYPE_INT_RGB);
             image = ImageIO.read(file);
         } catch (Exception e) {

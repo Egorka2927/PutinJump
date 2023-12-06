@@ -17,7 +17,7 @@ public class WallPanel extends JPanel {
         super.paintComponent(g);
         BufferedImage image = null;
         try {
-            File file = new File("C:\\Users\\fea00\\IdeaProjects\\summer2023\\putinJump\\src\\main\\resources\\brickWall2.jpg");
+            File file = new File(getClass().getResource("/brickWall2.jpg").getPath());
             image = new BufferedImage(200, 600, BufferedImage.TYPE_INT_RGB);
             image = ImageIO.read(file);
         } catch (Exception e) {

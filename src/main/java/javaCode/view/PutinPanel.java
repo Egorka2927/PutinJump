@@ -29,9 +29,9 @@ public class PutinPanel extends JPanel {
         try {
             File file;
             if (sitting) {
-                file = new File("C:\\Users\\fea00\\IdeaProjects\\summer2023\\putinJump\\src\\main\\resources\\littlePutinSitting.png");
+                file = new File(getClass().getResource("/littlePutinSitting.png").getPath());
             } else {
-                file = new File("C:\\Users\\fea00\\IdeaProjects\\summer2023\\putinJump\\src\\main\\resources\\littlePutin.png");
+                file = new File(getClass().getResource("/littlePutin.png").getPath());
             }
             image = new BufferedImage(50, 100, BufferedImage.TYPE_INT_RGB);
             image = ImageIO.read(file);

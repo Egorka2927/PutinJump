@@ -2,7 +2,6 @@ package javaCode.controller;
 
 import javaCode.model.Map;
 import javaCode.model.MyThread;
-import javaCode.model.Platform;
 import javaCode.view.Frame;
 
 import java.awt.event.ActionEvent;

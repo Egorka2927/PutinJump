@@ -37,7 +37,7 @@ public class PlatformPanel extends JPanel {
         super.paintComponent(g);
         BufferedImage image = null;
         try {
-            File file = new File("C:\\Users\\fea00\\IdeaProjects\\summer2023\\putinJump\\src\\main\\resources\\platform2.png");
+            File file = new File(getClass().getResource("/platform2.png").getPath());
             image = new BufferedImage(72, 21, BufferedImage.TYPE_INT_RGB);
             image = ImageIO.read(file);
         } catch (Exception e) {
